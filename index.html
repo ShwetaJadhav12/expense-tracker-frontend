@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="container">
+        <div id="firstBox">
+            <div class="track">
+                <div id="save">
+                    <div id="s1">Saving</div>
+                    <div id="s2">0.00Rs</div>
     
+                </div>
+                <div id="Total">
+                    <div id="t1">Income</div>
+                    <div id="t2">0.00Rs</div>
+                </div>
+                <div id="Expense">
+                    <div id="e1">Expense</div>
+                    <div id="e2">0.00Rs</div>
+                </div>
+    
+            </div>
+
+        </div>
+       
+
+          <!-- Transaction Form -->
+          <div id="transaction-form-container">
+            <h3>Add Transaction</h3>
+            <form id="transaction-form">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" required>
+
+                <label for="type">Type:</label>
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </div>
+    </div>
+
 </body>
+
 </html>
