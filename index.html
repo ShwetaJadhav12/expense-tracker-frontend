@@ -35,21 +35,33 @@
           <div id="transaction-form-container">
             <h3>Add Transaction</h3>
             <form id="transaction-form">
-                <label for="amount">Amount:</label>
-                <input type="number" id="amount" required>
-
-                <label for="category">Category:</label>
-                <input type="text" id="category" required>
-
-                <label for="type">Type:</label>
-                <select id="type" required>
-                    <option value="income">Income</option>
-                    <option value="expense">Expense</option>
-                </select>
-
-                <button type="submit">Add Transaction</button>
+                <div class="form-row">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" required>
+        
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" required>
+        
+                    <label for="type">Type:</label>
+                    <select id="type" required>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+        
+                <div class="form-button">
+                    <button type="submit">Add Transaction</button>
+                </div>
             </form>
         </div>
+        <div id="container3">
+            <p>Last Transactions</p>
+        </div>
+        
+
+
+
+        
     </div>
 
 </body>

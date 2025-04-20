@@ -1,6 +1,6 @@
 /* Apply background only to body, not everything */
 body {
-    background-color: rgb(222, 209, 235);
+    background-color: rgb(246, 244, 248);
     margin: 4rem;
     display: flex;
     justify-content: center;
@@ -20,6 +20,7 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #e2c1e0;
 }
 
 /* Track section */
@@ -56,55 +57,77 @@ body {
     color: rgb(179, 208, 219);
 }
 
-/* Transaction Form */
 #transaction-form-container {
-    height: 50%;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-form label {
-    font-size: 1.1rem;
+.form-heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #333;
+    text-align: center;
 }
 
-form input, form select {
-    padding: 10px;
+#transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: #444;
+}
+
+.input-group input,
+.input-group select {
+    padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
-    width: 100%;
 }
 
-form button {
-    padding: 12px;
-    background-color: #4CAF50;
+.form-button {
+    text-align: center;
+}
+
+.form-button button {
+    padding: 0.6rem 1.5rem;
+    background-color: #af4c93;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #45a049;
+.form-button button:hover {
+    background-color: #5c0f3d;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -116,4 +139,17 @@ form button:hover {
     #Total, #Expense, #save {
         width: 80%;
     }
+}
+#container3{
+    width: 100%;
+    height: 30vh;
+    background-color: #f8f6f9;
+    margin: 2rem;
+    border-radius: 10px;
+}
+#container3 p{
+    color: #5c0f3d;
+    font-size: large;
+    margin: 2rem;
+    font-weight: 600;
 }
